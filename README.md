@@ -1,3 +1,4 @@
-# Hello-World
-Base Repository 
-Will add more info in the near future. Welcome !
+# Welcome to a new start in sharing Team !
+This will be the companys Base Repository 
+I will make sure to add more info in the near future. 
+
