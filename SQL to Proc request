@@ -1,0 +1,13 @@
+***SQL converstion to Procedure Test ******
+
+use [IPCUS]
+go
+
+create procedure freightDiffTestMOE @Rnumberpass nvarchar(30)
+as
+
+select GPINVNO,RTRIM(I.OPORDERNO),RTRIM(I.POPMtchShpRcpt),ISNULL(P.SALSTERR,0) ProfitCenter
+from CW_PI10310 I 
+LEFT JOIN #tempProfitCenter p ON p.OPORDERNO = i.OPORDERNO AND P.BOLNO = i.POPMtchShpRcpt
+where GPINVNO in (@Rnumberpass)
+go
